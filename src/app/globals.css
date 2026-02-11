@@ -48,157 +48,151 @@ html {
 
 /* Print-friendly styles for PDF export */
 @media print {
-  /* Hide navigation, footer, and interactive elements */
+  /* Hide navigation, footer, and buttons */
   header,
   footer,
-  [href="#contact"],
-  [href*="mailto"]:not(#contact *),
-  .dark\:bg-gray-900,
-  button[aria-label*="dark"] {
-    display: none !important;
-  }
-
-  /* Force white background and black text */
-  * {
-    background: white !important;
-    color: black !important;
-    box-shadow: none !important;
-  }
-
-  /* Remove gradients and colored backgrounds */
-  body,
-  section,
-  div {
-    background: white !important;
-    background-image: none !important;
-  }
-
-  /* Contact info card - keep visible but simplify */
-  #contact .bg-gradient-to-br {
-    background: white !important;
-    border: 1px solid #ccc !important;
-    padding: 1rem !important;
-  }
-
-  /* Optimize page layout */
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 11pt;
-    line-height: 1.4;
-  }
-
-  /* Hero section adjustments */
-  #home {
-    min-height: auto !important;
-    padding: 1rem 0 !important;
-    page-break-after: avoid;
-  }
-
-  /* Profile image - reduce size for print */
-  #home img {
-    width: 80px !important;
-    height: 80px !important;
-    margin: 0 auto 0.5rem !important;
-  }
-
-  /* Hide social media buttons in hero */
-  #home > div > div > div:has(a[aria-label="LinkedIn"]),
-  #home > div > div > div:has(a[aria-label="GitHub"]) {
-    display: none !important;
-  }
-
-  /* Hide CTA buttons */
+  button[aria-label*="dark"],
+  button[aria-label*="Dark"],
   #home a[href="#contact"],
   #home a[download] {
     display: none !important;
   }
 
-  /* Section spacing */
+  /* Reset page */
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 1.5;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Remove background gradients but keep structure */
   section {
-    padding: 1rem 0 !important;
+    background: white !important;
+    background-image: none !important;
+    padding: 1.5rem 0 !important;
     page-break-inside: avoid;
   }
 
-  /* Headings */
+  /* Hero section */
+  #home {
+    min-height: auto !important;
+    padding-top: 0 !important;
+    background: white !important;
+  }
+
+  /* Profile image */
+  #home img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  /* Headings - ensure visible */
+  h1, h2, h3, h4, h5, h6, p, span, div, li {
+    color: black !important;
+  }
+
   h1 {
-    font-size: 24pt;
+    font-size: 28pt;
     margin-bottom: 0.25rem;
   }
 
   h2 {
-    font-size: 16pt;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #333;
+    font-size: 18pt;
+    margin: 1rem 0 0.75rem 0;
+    border-bottom: 2px solid #333;
     padding-bottom: 0.25rem;
   }
 
   h3 {
-    font-size: 13pt;
+    font-size: 14pt;
     margin-bottom: 0.25rem;
   }
 
-  /* Remove excessive padding/margins */
+  /* Container adjustments */
   .container {
     max-width: 100% !important;
-    padding: 0 1rem !important;
+    padding: 0 !important;
   }
 
-  /* Experience and skills cards */
-  .rounded-lg,
-  .shadow-lg,
-  .shadow-md {
-    border: 1px solid #ddd !important;
-    border-radius: 0 !important;
+  /* Cards and boxes - simplify */
+  div[class*="bg-gradient"],
+  div[class*="shadow"],
+  div[class*="rounded"] {
+    background: white !important;
+    background-image: none !important;
     box-shadow: none !important;
-    margin-bottom: 0.75rem !important;
-    padding: 0.75rem !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    margin-bottom: 1rem !important;
+    padding: 1rem !important;
   }
 
-  /* List items */
+  /* Experience/Skills cards */
+  .grid > div {
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  /* Lists */
   ul {
     margin: 0.5rem 0;
-    padding-left: 1.25rem;
+    padding-left: 1.5rem;
   }
 
   li {
-    margin-bottom: 0.25rem;
-    page-break-inside: avoid;
+    margin-bottom: 0.35rem;
+    color: black !important;
   }
 
-  /* Links - show URL for important links */
-  a[href^="mailto"]::after {
-    content: " (" attr(href) ")";
-    font-size: 9pt;
+  /* Email links - keep but style for print */
+  a[href^="mailto"] {
+    color: black !important;
+    text-decoration: none !important;
   }
 
-  /* Skills grid - optimize for print */
-  .grid {
-    display: block !important;
+  /* Hide social media icon links in hero */
+  #home div[class*="flex justify-center gap-4"]:has(a[aria-label="LinkedIn"]) {
+    display: none !important;
   }
 
-  .grid > div {
-    margin-bottom: 0.5rem !important;
-    page-break-inside: avoid;
-  }
-
-  /* Page breaks */
-  .page-break-before {
-    page-break-before: always;
-  }
-
-  .page-break-after {
-    page-break-after: always;
-  }
-
-  /* Prevent orphans and widows */
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* Contact section - simplify */
+  /* Contact section */
   #contact {
+    page-break-before: auto;
+  }
+
+  /* Contact card */
+  #contact div[class*="bg-gradient"] {
+    background: white !important;
+    border: 1px solid #333 !important;
+    color: black !important;
+  }
+
+  #contact div[class*="bg-gradient"] * {
+    color: black !important;
+  }
+
+  /* Prevent page breaks in bad places */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  ul, ol {
     page-break-before: avoid;
+  }
+
+  /* Force black text everywhere */
+  * {
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
