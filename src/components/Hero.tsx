@@ -69,15 +69,6 @@ export default function Hero() {
             >
               <Github size={24} className="text-gray-900 dark:text-white" />
             </a>
-            <a
-              href={personalInfo.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-all"
-              aria-label="Website"
-            >
-              <ExternalLink size={24} className="text-gray-900 dark:text-white" />
-            </a>
           </div>
 
           {/* CTA Buttons */}
