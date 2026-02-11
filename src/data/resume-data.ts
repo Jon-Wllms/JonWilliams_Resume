@@ -9,7 +9,7 @@ export const resumeData = {
     github: "https://github.com/Jon-Wllms",
     website: "https://jonwilliams.com",
     profileImage: "/jonwilliams_resume.jpeg",
-    summary: "Supply chain and logistics executive with 20 years optimizing distribution, warehousing, and 3PL operations across large-scale facilities. Specialized in automation design, process improvement, and data-driven transformation with expertise in ASRS, robotics, AGV systems, and enterprise integrations (WMS, ERP, HCM). Delivered breakthrough results including 1300% throughput increase at 3.5MM sq/ft facility, $500K annual savings through robotics implementation, and 30% IT cost reduction via AI solutions. Seeking senior leadership or consulting roles driving strategic supply chain transformation."
+    summary: "Supply chain and logistics leader with 20 years optimizing distribution, warehousing, and 3PL operations across large-scale facilities. Specialized in automation design, process improvement, and data-driven transformation with expertise in ASRS, robotics, AGV systems, and enterprise integrations (WMS, ERP, HCM). Delivered breakthrough results including 1300% throughput increase at 3.5MM sq/ft facility, $500K annual savings through robotics implementation, and 30% IT cost reduction via AI solutions. Seeking senior leadership or consulting roles driving strategic supply chain transformation."
   },
   
   experience: [
