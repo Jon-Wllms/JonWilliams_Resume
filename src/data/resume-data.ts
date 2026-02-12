@@ -65,7 +65,7 @@ export const resumeData = {
       id: 4,
       company: "Houston Wire & Cable Company",
       position: "Regional Distribution Manager",
-      location: "Various Locations",
+      location: "Memphis, TN | Philadelphia, PA | Houston, TX",
       startDate: "Jan 2009",
       endDate: "Jan 2015",
       description: "Advanced through progressive promotions from Inventory Manager to Distribution Manager to Regional Distribution Manager, building comprehensive expertise in distribution operations and customer service excellence.",
