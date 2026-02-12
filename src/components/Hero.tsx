@@ -34,7 +34,7 @@ export default function Hero() {
             {personalInfo.title}
           </p>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-            {personalInfo.summary}
+            {personalInfo.tagline}
           </p>
 
           {/* Contact Info */}
