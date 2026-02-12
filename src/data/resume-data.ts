@@ -21,7 +21,7 @@ export const resumeData = {
       location: "Greenville, SC",
       startDate: "Jan 2023",
       endDate: "Present",
-      description: "Report directly to VP of Process Improvement, leading enterprise-wide initiatives across multiple 3PL accounts to drive operational efficiency and technological advancement.",
+      description: "Report directly to VP of Process Improvement, leading enterprise-wide initiatives across multiple 3PL accounts in e-commerce fulfillment, B2B distribution, and manufacturing to drive operational efficiency and technological advancement.",
       achievements: [
         "Provide strategic oversight for cost reduction programs, complex systems integration projects, and automation evaluation/implementation spanning the organization's 3PL portfolio",
         "Serve as key liaison between operations, IT, and business development teams to identify opportunities for process optimization and technology-enabled transformation",
@@ -53,7 +53,7 @@ export const resumeData = {
       location: "Greenville, SC",
       startDate: "Jan 2015",
       endDate: "Jan 2020",
-      description: "Led enterprise-wide process improvement initiatives spanning 10+ distribution sites across multiple 3PL accounts. Focused on identifying and implementing cost reduction opportunities, workflow optimization, and technology integration projects without direct reports.",
+      description: "Led enterprise-wide process improvement initiatives spanning 10+ distribution sites across multiple 3PL accounts serving e-commerce fulfillment, B2B distribution, and manufacturing, focusing on cost reduction, workflow optimization, and technology integration projects.",
       achievements: [
         "Delivered $1.5MM in annual cost savings through design and implementation of multi-company Labor Management System (LMS) integration, optimizing workforce productivity across the enterprise",
         "Spearheaded automation and technology initiatives including inbound conveyor system integration, exoskeleton trials to reduce ergonomic risks, and Kronos workforce management optimization",
