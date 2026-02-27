@@ -30,9 +30,6 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in">
             {personalInfo.name}
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-6">
-            {personalInfo.title}
-          </p>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
             {personalInfo.tagline}
           </p>
